@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./detailmodal.module.css";
+import styles from "./detailModal.module.css";
 import { IoMdClose } from "react-icons/io";
 
 const DetailModal = ({ product, closeModal }) => {
