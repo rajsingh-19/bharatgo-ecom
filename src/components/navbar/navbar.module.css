@@ -54,7 +54,6 @@
   text-decoration: underline;
   font-weight: bold;
 }
-
 /* Hide hamburger on desktop */
 .hamburgerMenu {
   display: none;
@@ -73,8 +72,12 @@
   flex-direction: column;
   gap: 10px;
   z-index: 999;
+  width: 170px;
 }
 .mobileMenu button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   border: none;
   background: none;
   text-align: left;

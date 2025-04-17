@@ -4,6 +4,8 @@ import styles from "./navbar.module.css";
 import { FaShoppingCart } from "react-icons/fa";
 import { useModal } from "../../context/ModalContext";
 import { FaUserCircle } from "react-icons/fa";
+import { FaRegUser } from "react-icons/fa";
+import { FaBoxArchive } from "react-icons/fa6";
 
 const Navbar = ({ activeCategory, setActiveCategory }) => {
   const navigate = useNavigate();
@@ -64,10 +66,10 @@ const Navbar = ({ activeCategory, setActiveCategory }) => {
         {/* Dropdown menu for small screens */}
         {showMenu && (
           <div className={styles.mobileMenu}>
-            <button onClick={handleMyOrders}>My Orders</button>
-            <button onClick={handleMyAccount}>My Account</button>
+            <button onClick={handleMyOrders}><FaBoxArchive />&nbsp; My Orders</button>
+            <button onClick={handleMyAccount}><FaRegUser />&nbsp; My Account</button>
             <button onClick={handleCartClick}>
-              Cart ({totalItems})
+              <FaShoppingCart size={16} />&nbsp;({totalItems})
             </button>
           </div>
         )}
