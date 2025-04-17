@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./CartModal.module.css";
+import styles from "./cartModal.module.css";
 import { IoMdClose } from "react-icons/io";
 import { useProducts } from "../../../context/ProductContext";
 import { useModal } from "../../../context/ModalContext";
