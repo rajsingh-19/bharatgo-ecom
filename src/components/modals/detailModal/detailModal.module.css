@@ -25,7 +25,6 @@
   background-color: transparent;
   cursor: pointer;
 }
-
 .modalImgContainer {
   display: flex;
   flex-direction: row;
@@ -38,7 +37,6 @@
   margin-top: 10px;
   border-radius: 15px;
 }
-
 .price {
   text-align: center;
   font-weight: 700;
@@ -59,4 +57,9 @@
         width: 85%;
         bottom: 5px;
     }
+}
+@media (min-width: 1025px) {
+  .detailModalContainer {
+    width: 30%;
+  }
 }

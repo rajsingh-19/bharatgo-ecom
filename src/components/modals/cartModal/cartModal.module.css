@@ -171,3 +171,8 @@
         height: 80px;
     }
 }
+@media (min-width: 1025px) {
+    .cartModalContainer {
+        width: 30%;
+    }
+  }

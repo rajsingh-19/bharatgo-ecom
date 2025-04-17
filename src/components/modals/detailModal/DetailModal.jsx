@@ -7,7 +7,6 @@ const DetailModal = ({ product, closeModal }) => {
   const { title, imageUrl, price, description } = product;
 
   return (
-      // <div className={styles.modalBackdrop} onClick={closeModal}>
       <div className={styles.detailModalContainer}>
         <div className={styles.cartHeading}>
           <p>Detail</p>
