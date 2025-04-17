@@ -1,0 +1,62 @@
+.detailModalContainer {
+  position: fixed;
+  width: 45%;
+  right: 2px;
+  top: 62px;
+  bottom: 2px;
+  border: 1px solid #000;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+.cartHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  height: 68px;
+}
+.cartHeading > p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.cartHeading > button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modalImgContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.modalImage {
+  width: 80%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.price {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.description {
+  padding: 10px;
+}
+
+/*          responsiveness       */
+@media (max-width: 426px) {
+    .detailModalContainer {
+        width: 85%;
+        bottom: 5px;
+    }
+}

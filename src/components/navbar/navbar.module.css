@@ -1,0 +1,106 @@
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e5e7eb;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.leftSection,
+.leftSection > ul,
+.rightSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.leftSection > span {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.leftSection > ul {
+  list-style-type: none;
+}
+.leftSection > ul > li {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(58, 57, 57);
+  cursor: pointer;
+  margin: 0px 10px;
+}
+.rightSection > button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(58, 57, 57);
+  margin: 0px 10px;
+}
+
+.activeCategory {
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+.activeNav {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Hide hamburger on desktop */
+.hamburgerMenu {
+  display: none;
+  cursor: pointer;
+}
+/* Dropdown menu (hidden by default) */
+.mobileMenu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 25px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 10px;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+.mobileMenu button {
+  border: none;
+  background: none;
+  text-align: left;
+  font-size: 14px;
+  padding: 5px;
+  cursor: pointer;
+  color: #333;
+}
+/* Show mobile menu and hamburger under 425px */
+@media screen and (max-width: 426px) {
+  .rightSection {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: flex;
+    align-items: center;
+  }
+  .mobileMenu {
+    display: flex;
+  }
+  .leftSection > span {
+    display: none;
+  }
+  .leftSection > ul > li {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px 4px;
+  }
+}
