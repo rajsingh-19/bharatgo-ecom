@@ -1,12 +1,52 @@
-# React + Vite
+# E-Comm App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Setup Instructions
 
-Currently, two official plugins are available:
+### Prerequisites
+  Node.js (v16+ recommended)
+  npm or yarn
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Installation
+    Clone the repository:
+    git clone <repository-url>
+    cd link-management-app
 
-## Expanding the ESLint configuration
+### Install dependencies:
+    npm install
+    ### or
+    yarn install
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Start the development server:
+    npm run dev
+    ### or
+    yarn dev
+
+### Open the application in your browser at http://localhost:5173/ (default Vite port).
+
+
+## About
+A modern React-based product catalog app with cart and product detail modal functionality. Users can view products, add them to the cart, and explore detailed information with smooth modal transitions.
+
+## Features Implemented
+1. Product Detail Modal — Click on a product image to view full details in a modal.
+
+2. Cart Modal — Add products to cart and view them with quantity updates.
+
+3. Cart Status Indicator — Shows checkmark if product already added.
+
+4. Global Modal Context — Cleanly managed modal state with React Context API.
+
+5. Responsive Design — Fully mobile-friendly and scales well across devices.
+
+
+## Tech Stack & Libraries
+
+1. React
+
+2. React Icons
+
+3. CSS Modules
+
+4. Context API
+
+5. Axios (for future API integration)
